@@ -1,0 +1,58 @@
+/**
+ **
+ ** Scroll Tip
+ **
+*/
+
+@bgColor: #ecf0f1;
+@bgHoverColor: #ecf0f1;
+@baseColor: #34495e;
+@hoverColor: #e67e22;
+@transparency: 70%;
+@transition: .3s;
+
+a.scrollTip {
+	display: block;
+	position: fixed;
+	right: 20px;
+	height: 16px;
+	top: 0;
+	z-index: 10;
+	font-size: .4em;
+	background: fade(@bgColor,@transparency);
+	color: @baseColor;
+	padding: 5px 5px;
+	border-radius: 3px;
+	border-bottom-right-radius: 0; 
+	border-top-right-radius: 0;
+	font-weight: 400;
+	text-decoration: none;
+	-webkit-transition: color @transition, background-color @transition;
+	-moz-transition: color @transition, background-color @transition;
+	transition: color @transition, background-color @transition;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: -13px;
+		height: 0;
+		top: 0;
+		border-top: 13px solid transparent;
+		border-left: 13px solid fade(@bgColor,@transparency);
+		border-bottom: 13px solid transparent;
+		-webkit-transition: background-color @transition;
+		-moz-transition: background-color @transition;
+		transition: background-color @transition;
+	}
+	&:hover,
+	&.activeTip {
+		color: @hoverColor;
+		background: @bgHoverColor;
+
+		&:after {
+			border-left: 13px solid @bgHoverColor;
+		}
+	}
+}
+

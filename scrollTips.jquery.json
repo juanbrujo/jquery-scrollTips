@@ -1,0 +1,30 @@
+{
+	"name": "scrollTips",
+	"title": "jQuery scrollTips",
+	"homepage": "https://github.com/juanbrujo/jquery-scrollTips",
+	"description": "",
+	"keywords": [
+		"jQuery",
+		"scroll",
+		"tooltip",
+		"navigation"
+	],
+	"version": "0.1",
+	"author": {
+		"name": "Jorge Epuñan",
+		"url": "https://github.com/juanbrujo",
+		"twitter": "@csslab"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/"
+		}
+	],
+	"bugs": "https://github.com/juanbrujo/jquery-scrollTips/issues",
+	"docs": "https://github.com/juanbrujos/jquery-scrollTips#readme",
+	"download": "https://github.com/juanbrujo/jquery-scrollTips/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.11.0"
+	}
+}

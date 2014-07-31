@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery scrollTips</title>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="../dist/jquery.scrollTips.min.css">
+	</head>
+	<body>
+
+		<div id="content">
+
+			<div id="intro">
+				<h1>jQuery scrollTips</h1>
+				<h2>This &lt;div id="intro"&gt; will be excluded</h2>
+			</div>
+
+			<section id="first">
+				<h1>First section</h1>
+			</section>
+
+			<section id="second">
+				<h1>Second section</h1>
+			</section>
+
+			<section id="third">
+				<h1>Third section</h1>
+			</section>
+
+		</div>
+		  
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.jQuery||document.write('<script src="js/jquery-1.11.1.min.js"><\/script>');</script>
+		<script src="../dist/jquery.scrollTips.min.js"></script>
+		<script>
+		$("#content").scrollTips({
+			onCreate: function(){
+				console.log('comienzo');
+			},
+			onSection: function(){
+				console.log('cambio section');
+			}
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+/**
+ **
+ ** General Styles
+ **
+*/
+
+@introBgColor: #e74c3c;
+@sectionBgColor: #27ae60;
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+* {margin: 0; padding: 0;}
+body {
+	font-family: 'Raleway', sans-serif;
+	// padding: 2rem;
+	font-size: 2em;
+	color: white;
+}
+
+div#intro {
+	position: relative;
+	height: 50em;
+	background-color: @introBgColor;
+
+	h1,h2 {
+  	position: absolute;
+  	top: 10%;
+  	width: 100%;
+  	text-align: center;
+  }
+  h2 {
+  	top: 20%;
+  }
+}
+section {
+	position: relative;
+  height: 50em;
+  background-color: @sectionBgColor;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  transition: background-color .3s;
+
+  	h1 {
+  		position: absolute;
+  		top: 20%;
+  		width: 100%;
+  		text-align: center;
+  	}
+
+  	&.activeSection {
+  		background-color: lighten(@sectionBgColor,10%);
+  	}
+}
+
