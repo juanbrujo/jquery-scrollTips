@@ -2,6 +2,8 @@
 
 This small jQuery plugin creates tooltips that helps navigation within the same page, using a specific **HTML** markup.
 
+[demo:](http://www.csslab.cl/ejemplos/jquery-scrollTips/)
+
 ![jQuery-scrollTips.js](https://dl.dropboxusercontent.com/u/3522/jQuery_scrollTip.gif)
 
 ## Use
